@@ -1,0 +1,384 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@200&family=PT+Serif:wght@400;700&display=swap');
+/*font-family: 'Noto Serif', serif;
+font-family: 'PT Serif', serif;*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(0, 0, 0);
+    
+}
+/*navbar*/
+.navbar-brand{
+    color: white !important;
+}
+nav{
+    font-size: 20PX;
+    
+}
+.navbar{
+    background-color: rgba(40, 60, 97, 0.36) !important;
+}
+.nav-link{
+    color: white !important;
+}
+.navbar-nav{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.nav-link:hover{
+    color: rgb(251, 234, 0) !important;
+}
+/*navbar*/
+/*index*/
+.jumbotron{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5) ) ,url(./multimedia/imagenes/83417.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+}
+.jumbotron h1{
+    font-size: 60px;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 50px 10px;
+    
+}
+.jumbotron p{
+    padding: 10px; 
+    color: white;
+    text-align: center;
+}
+.jumbotron-button{
+    background-color:  rgb(75, 75, 75);
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid white;
+    text-align: center;
+    text-transform: capitalize;
+    margin-left: 70px;
+}
+.jumbotron-button:hover{
+    color: black;
+}
+
+.index-subtitle{
+    text-align: center;
+    font-size: 35px;
+    text-transform: capitalize;
+    color: rgb(248, 247, 247);
+    margin: 25px;
+    text-transform: capitalize;
+}
+.objetivo{
+    text-transform: capitalize;
+    font-size: 30px;
+}
+.main-section-index{
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.sec-main{
+    height: 500px;
+    padding-top: 20px;
+}
+.button-index{
+    background-color: rgb(75, 75, 75);
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+.button-index:hover{
+    color: black;
+}
+.fa-solid{
+    font-size: 50px;
+    border: 2px solid white;
+    padding: 20px 40px;
+    margin: 20px;
+    text-align: center;
+}
+.contenedor-img-john{
+    height: 300px;
+    border: 2px solid black;
+    background-image: url(./multimedia/imagenes/john-john-florence-deja-hurley.jpg);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+}
+.contenedor-surf-john-byw{
+    background-image: url(multimedia/imagenes/john\ surf\ black\ and\ \ white.jpeg);
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid black;
+}
+.info-john{
+    color: rgb(251, 249, 249);
+    margin: 10px;
+}
+hr{
+    color: white;
+}
+/*index*/
+/*mediaquerie del index inaliza*/
+@media only screen and (min-width: 1000px){
+    .jumbotron h1{
+        font-size: 100px;
+        padding-top: 60px;
+    }
+    .jumbotron p{
+        margin: 50px;
+        
+        font-size: 25px;
+        padding: 100px 150px;
+        
+    }
+    .jumbotron-button{
+        float: right;
+        margin-right: 500px;
+    }
+}
+/*mediaquerie del index finaliza/
+
+
+/*sobre nosotros*/ 
+.main-nos{
+    background-color: rgba(119, 124, 164, 0.472);
+}
+.container-nos {
+    border: 2px solid black;
+    height: 650px;
+    
+}
+.img-nos-principal{
+    background-image: url(./multimedia/imagenes/surfing-g92f78a6cd_1280.jpg);
+    background-position: center;
+    background-size: cover
+}
+.titulo-uno-nos{
+    color: rgb(243, 243, 244);
+    font-size: 70px;
+    text-align: center;
+    
+}
+.cont-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.cajita-nos {
+    border: rgb(0, 0, 0) 2px solid;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.42);
+    border-radius: 10px;
+    width: 300px;
+    
+}
+.cajita-nos a{
+    font-size: 25px;
+    text-align: center;
+}
+.link-nos{
+    text-decoration: none;
+    color: white;
+}
+.link-nos:hover{
+    color: black;
+}
+
+/*MAIN*/
+/*section sobre nosotros*/
+.art-nos{
+    color: white;
+    text-transform: capitalize;
+    height: 250px;
+    border: 2px solid black;
+    padding: 10px;
+}
+.art-nos p{
+    background-color: rgba(3, 1, 1, 0.675);
+    border-radius: 10px;
+    border: 2px solid black;
+    margin-top: 10px;
+    padding: 10px;
+}
+.art{
+    border: 3px solid black;
+    height: 300px;
+}
+.art1{
+    background-image: url(./multimedia/imagenes/contaminacion-1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.art2{
+    background-image: url(./multimedia/imagenes/contaminacion2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.art3{
+    background-image: url(./multimedia/imagenes/contaminacion\ 3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+/*section sobre nosotros*/
+
+/*spots*/
+.main-spots-bk{
+    background-image: url(./multimedia/imagenes/neist-point-540119_640.jpg);
+    background-position: center;
+    
+}
+
+.spots-tittle{
+font-size: 50px;
+color: white;
+text-transform: capitalize;
+text-align: center;
+padding: 20px;
+}
+
+#spots{
+    height: 100%;
+    background-color: rgba(0, 255, 255, 0);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.card{
+    height: 400px;
+    width: 250px;
+    background-color: gray;
+    text-align: center;
+    border: 3px solid black;
+    margin: 40px;
+    
+}
+.card-img.img-uno{
+    height: 200px;
+    width: 100%;
+    background-image: url(./multimedia/imagenes/chapadmalal-640x439.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.card h5{
+    font-size: 30px;
+    color: white;
+    text-transform: capitalize;
+    padding-top: 15px;
+}
+.card p{
+    color: rgb(0, 0, 0);
+    margin: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.card a{
+    background-color: rgb(43, 65, 97);
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    
+}
+.card-img.img-dos{
+    height: 200px;
+    width: 100%;
+    background-image: url(./multimedia/imagenes/mar\ del\ plata\ surf.webp);
+    background-position: center;
+    background-size: cover;
+}
+.card-img.img-tres{
+    height: 200px;
+    width: 100%;
+    background-image: url(./multimedia/imagenes/El-Muelle-de-Miramar.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.card-img.img-cuatro{
+    height: 200px;
+    width: 100%;
+    background-image: url(./multimedia/imagenes/mar\ de\ las\ pampas.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.card-img.img-cinco{
+    height: 200px;
+    width: 100%;
+    background-image: url(./multimedia/imagenes/mar\ chiquita.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.card-img.img-seis{
+    height: 200px;
+    width: 100%;
+    background-image: url(./multimedia/imagenes/mar\ de\ ajo.jpeg);
+    background-position: center;
+    background-size: cover;
+}.card-img.img-siete{
+    height: 200px;
+    width: 100%;
+    background-image: url(./multimedia/imagenes/San-Clemente-del-Tuyú.webp);
+    background-position: center;
+    background-size: cover;
+}.card-img.img-ocho{
+    height: 200px;
+    width: 100%;
+    background-image: url(./multimedia/imagenes/quequen.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.card-img.img-nueve{
+    height: 200px;
+    width: 100%;
+    background-image: url(./multimedia/imagenes/villa\ gesel.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+/*accesorios*/
+
+
+/*footer*/
+.footer{
+    background-color: rgba(32, 31, 31, 0.819);
+    height: 100px;
+    text-align: center;
+    color: rgb(252, 252, 252);
+}
+.footer p{
+    padding-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
