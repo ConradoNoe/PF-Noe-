@@ -156,98 +156,104 @@ hr{
     }
 }
 /*mediaquerie del index finaliza/
-
-
 /*sobre nosotros*/ 
-.main-nos{
-    background-color: rgba(119, 124, 164, 0.472);
-}
-.container-nos {
-    border: 2px solid black;
-    height: 650px;
-    
-}
-.img-nos-principal{
-    background-image: url(./multimedia/imagenes/surfing-g92f78a6cd_1280.jpg);
+.main-sect-sobre-nos{
+    height: 100vh;
+    color: white;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5) ) ,url(./multimedia/imagenes/bk-sobre-nos-1.jpg);
+    background-size: cover;
     background-position: center;
-    background-size: cover
 }
-.titulo-uno-nos{
-    color: rgb(243, 243, 244);
-    font-size: 70px;
+.title-nos{
+    font-size: 60px;
     text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
     
 }
-.cont-flex{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    text-align: center;
+
+.general-sec{   
+    color: white;
 }
-.cajita-nos {
-    border: rgb(0, 0, 0) 2px solid;
-    height: 50px;
-    background-color: rgba(0, 0, 0, 0.42);
-    border-radius: 10px;
-    width: 300px;
-    
-}
-.cajita-nos a{
-    font-size: 25px;
-    text-align: center;
-}
-.link-nos{
+.main-button-sobre-nos{
+    padding: 10px 20px;
+    background-color: rgb(75, 75, 75);
     text-decoration: none;
     color: white;
-}
-.link-nos:hover{
-    color: black;
-}
-
-/*MAIN*/
-/*section sobre nosotros*/
-.art-nos{
-    color: white;
     text-transform: capitalize;
-    height: 250px;
-    border: 2px solid black;
-    padding: 10px;
+    border: 1px solid white;
+    margin: 30px;
 }
-.art-nos p{
-    background-color: rgba(3, 1, 1, 0.675);
-    border-radius: 10px;
-    border: 2px solid black;
-    margin-top: 10px;
-    padding: 10px;
-}
-.art{
-    border: 3px solid black;
-    height: 300px;
-}
-.art1{
-    background-image: url(./multimedia/imagenes/contaminacion-1.jpg);
-    background-size: cover;
-    background-position: center;
-}
-.art2{
-    background-image: url(./multimedia/imagenes/contaminacion2.jpg);
-    background-size: cover;
-    background-position: center;
-}
-.art3{
-    background-image: url(./multimedia/imagenes/contaminacion\ 3.jpg);
-    background-size: cover;
-    background-position: center;
-}
-/*section sobre nosotros*/
-
-/*spots*/
-.main-spots-bk{
-    background-image: url(./multimedia/imagenes/neist-point-540119_640.jpg);
-    background-position: center;
+.main-button-sobre-nos:hover{
+    color: black;
     
 }
+.main-sobre-nos-p{
+    padding-top: 200px;
+    padding-bottom: 20px;
+}
 
+.subtitle-nos-1{
+    text-align: center;
+    text-transform: capitalize;
+    color: white;
+    
+}
+.subtitle-nos-2{
+    color: white;
+    text-transform: capitalize;
+
+    font-size: 24px;
+}
+.sec-nos-redes{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    justify-content: center;
+}
+.sobre-nos-preg-1{
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.subtitle-redes{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    padding-top: 20px;
+    text-transform: capitalize;
+}
+.aside-nos{
+    color: white;
+    border-left:1px solid white ;
+    padding-top: 40px;
+}
+.banner-bk-redes{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5) ) ,url(./multimedia/imagenes/banner-nos-def.jpg);
+    background-position: center;
+    background-size: cover;
+}
+@media only screen and (min-width:1000px){
+    .main-sect-sobre-nos h2{
+        font-size: 100px;
+    }
+    .main-sect-sobre-nos p{
+        font-size: 25px;
+        margin: 80px;
+        padding-top: 170px;
+    }
+    .main-button-sobre-nos{
+        float: right;
+        margin-right: 100px;
+    }
+}
+/*section sobre nosotros*/
+
+
+/*spots*/
 .spots-tittle{
 font-size: 50px;
 color: white;
@@ -353,10 +359,7 @@ padding: 20px;
     background-position: center;
     background-size: cover;
 }
-
 /*accesorios*/
-
-
 /*footer*/
 .footer{
     background-color: rgba(32, 31, 31, 0.819);
@@ -367,6 +370,7 @@ padding: 20px;
 .footer p{
     padding-top: 10px;
 }
+/*footer*/
 
 
 
