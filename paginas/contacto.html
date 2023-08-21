@@ -44,18 +44,30 @@
         </div>
     </nav>
     <!-- nav bar fin-->
-    <main>
-        <section class="formulario">
-            <h2> Crea tu perfil</h2>
-            <input class="formulario-1" type="text" name="nombres" id="nombres" placeholder=" ingrese su nombre">
-            <input class="formulario-1" type="text" name="apellido" id="apellido" placeholder=" ingrese su apellido">
-            <input class="formulario-1" type="email" name="nombres" id="nombres" placeholder=" ingrese su e-mail">
-            <input class="formulario-1" type="password" name="nombres" id="nombres" placeholder=" ingrese su contraseña">
-            
-            <p> <a href="#">olvidaste tu contraseña?</a>
-                <br>
-                <button>registrar</button>
-        </section>
+    <main class="form-pag">
+        
+        <form>
+            <h2 class="form-title">inicia sesion</h2>
+            <p class="form-p">aun no te registraste? <a href="#">entra aqui</a></p>
+            <div class="form-container">
+                <div class="form-group">
+                    <input type="text" id="name" class="form-input" placeholder= "  " >
+                    <label for="name" class="form-label">nombre</label>
+                    <span class="form-line"></span>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="user" class="form-input" placeholder= "  " >
+                    <label for="user" class="form-label">usuario</label>
+                    <span class="form-line"></span>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" class="form-input" placeholder= "  " >
+                    <label for="password" class="form-label">contraseña</label>
+                    <span class="form-line"></span>
+                </div>
+                <input type="submit" class="form-submit" value="entrar">
+            </div>
+        </form>
     </main>
     <footer class="conteiner-fluid">
         <div class="row">

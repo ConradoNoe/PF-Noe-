@@ -360,6 +360,56 @@ padding: 20px;
     background-size: cover;
 }
 /*accesorios*/
+
+/*contacto inicia*/
+.form-pag{
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5) ) ,url(./multimedia/imagenes/contaminacion-1.jpg);
+    display: flex;
+    background-color: black;
+}
+form{
+    background-color: rgba(253, 253, 253, 0.53);
+    border: 1px solid black;
+    margin: auto;
+    width: 90%;
+    max-width: 400px;
+    padding: 4.5em 3em;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
+    text-align: center;
+}
+.form-title{
+    font-size: 2rem;
+    margin-bottom: .5em;
+}
+.form-p{
+    font-weight: 300;
+}
+.form-link{
+    font-weight: 400;
+    color: black;
+}
+.form-container{
+    margin-top: 3em;
+    display: grid;
+    gap: 2.5em;
+}
+.form-group{
+    position: relative;
+}
+.form-input{
+    width: 100%;
+    background: none;
+    color: grey;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid;
+}
+/*contacto inicia*/
+
 /*footer*/
 .footer{
     background-color: rgba(32, 31, 31, 0.819);
