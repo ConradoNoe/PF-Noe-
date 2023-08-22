@@ -7,9 +7,6 @@ font-family: 'PT Serif', serif;*/
 
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Fjalla+One&family=Russo+One&display=swap');
 
-
-
-
 * {
     margin: 0;
     padding: 0;
@@ -43,6 +40,7 @@ nav{
 .nav-link:hover{
     color: rgb(251, 234, 0) !important;
 }
+
 /*navbar*/
 /*index*/
 .jumbotron{
@@ -105,7 +103,6 @@ nav{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    
 }
 .sec-main{
     height: 500px;
@@ -202,7 +199,6 @@ hr{
 }
 .main-button-sobre-nos:hover{
     color: black;
-    
 }
 .main-sobre-nos-p{
     padding-top: 200px;
@@ -215,15 +211,12 @@ hr{
     color: white;
     font-family: 'Anton', sans-serif;
     font-family: 'Fjalla One', sans-serif;
-    
 }
 .subtitle-nos-2{
     color: white;
     text-transform: capitalize;
     font-family: 'Anton', sans-serif;
     font-family: 'Fjalla One', sans-serif;
-    
-
     font-size: 24px;
 }
 .sec-nos-redes{
@@ -247,11 +240,10 @@ hr{
     text-transform: capitalize;
     font-family: 'Anton', sans-serif;
     font-family: 'Fjalla One', sans-serif;
-    
 }
 .aside-nos{
     color: white;
-    border-left:1px solid white ;
+    border-left:1px solid white;
     padding-top: 40px;
 }
 .banner-bk-redes{
@@ -300,7 +292,6 @@ padding: 20px;
     text-align: center;
     border: 3px solid black;
     margin: 40px;
-    
 }
 .card-img.img-uno{
     height: 200px;
@@ -362,7 +353,8 @@ padding: 20px;
     background-image: url(./multimedia/imagenes/mar\ de\ ajo.jpeg);
     background-position: center;
     background-size: cover;
-}.card-img.img-siete{
+}
+.card-img.img-siete{
     height: 200px;
     width: 100%;
     background-image: url(./multimedia/imagenes/San-Clemente-del-Tuyú.webp);
@@ -389,7 +381,7 @@ padding: 20px;
     min-height: 100vh;
     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5) ) ,url(./multimedia/imagenes/contaminacion-1.jpg);
     display: flex;
-    background-color: black;
+    
 }
 form{
     background-color: rgba(253, 253, 253, 0.53);
