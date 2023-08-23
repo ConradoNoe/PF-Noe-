@@ -381,7 +381,7 @@ padding: 20px;
     min-height: 100vh;
     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5) ) ,url(./multimedia/imagenes/contaminacion-1.jpg);
     display: flex;
-    
+    background-color: black;
 }
 form{
     background-color: rgba(253, 253, 253, 0.53);
@@ -439,16 +439,51 @@ form{
 
 /*accesorios falta terminar*/ 
 
-.carousel-inner{
-    height: 600px;
+.main-accesorios{
     
 }
-.accesorios-sec-1{
-    height: 600px;
-    background-color: aqua;
+.accesorios-title{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Russo One', sans-serif;
+    padding-top: 20px;
+    text-transform: capitalize;
 }
-
-
+.main-accesorios p{
+    color: white;
+    padding-top: 50px;
+}
+.accesorios-subtitle{
+    font-family: 'Anton', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
+    color: white;
+    text-align: center;
+}
+.accesorios-sec-1 p{
+    color: white;
+}
+.button-accesorios{
+    padding: 10px 20px;
+    background-color: grey;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+}
+.tablas{
+    margin-bottom: 30px;
+}
+.quillas{
+    margin-bottom: 30px;
+}
+.leash{
+    margin-bottom: 30px;
+}
+.wetsuits{
+    margin-bottom: 30px;
+}
 
 
 
