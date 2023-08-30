@@ -14,7 +14,6 @@ font-family: 'PT Serif', serif;*/
 }
 body{
     background-color: rgb(0, 0, 0);
-    
 }
 /*navbar*/
 .navbar-brand{
@@ -40,8 +39,17 @@ nav{
 .nav-link:hover{
     color: rgb(251, 234, 0) !important;
 }
+.navbar-brand{
+    font-size: 25PX;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Russo One', sans-serif;
+}
 
 /*navbar*/
+    body{
+        background-color: black;
+    }
 /*index*/
 .jumbotron{
     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5) ) ,url(./multimedia/imagenes/83417.jpg);
@@ -269,12 +277,20 @@ hr{
 
 
 /*spots*/
+.main-spots-bk{
+    background-image: url(./multimedia/imagenes/spots-bk-1.jpg);
+}
 .spots-tittle{
-font-size: 50px;
-color: white;
-text-transform: capitalize;
-text-align: center;
-padding: 20px;
+    font-size: 50px;
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Russo One', sans-serif;
+    background-size: cover;
+    background-position: center;
 }
 
 #spots{
@@ -305,6 +321,9 @@ padding: 20px;
     color: white;
     text-transform: capitalize;
     padding-top: 15px;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Russo One', sans-serif;
 }
 .card p{
     color: rgb(0, 0, 0);
@@ -313,11 +332,13 @@ padding: 20px;
     padding-bottom: 10px;
 }
 .card a{
-    background-color: rgb(43, 65, 97);
+    background-color: rgb(75, 75, 75);
     text-decoration: none;
     padding: 10px 20px;
     color: white;
-    
+}
+.card a:hover{
+    color: black;
 }
 .card-img.img-dos{
     height: 200px;
@@ -379,9 +400,10 @@ padding: 20px;
 /*contacto inicia*/
 .form-pag{
     min-height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5) ) ,url(./multimedia/imagenes/contaminacion-1.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5) ) ,url(./multimedia/imagenes/contacto-bk-uno.jpg);
+    background-position: center;
+    background-size: cover;
     display: flex;
-    background-color: black;
 }
 form{
     background-color: rgba(253, 253, 253, 0.53);
@@ -439,52 +461,74 @@ form{
 
 /*accesorios falta terminar*/ 
 
-.main-accesorios{
-    
+.main-sect-accesorios{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5) ) ,url(./multimedia/imagenes/img-bk-accesorios.jpg);
+    background-size: cover;
+    background-position: center;
 }
-.accesorios-title{
+.title-accesorios{
     font-size: 50px;
-    color: white;
     text-align: center;
+    color: white;
     font-family: 'Anton', sans-serif;
     font-family: 'Fjalla One', sans-serif;
     font-family: 'Russo One', sans-serif;
     padding-top: 20px;
     text-transform: capitalize;
+    text-align: center;
 }
-.main-accesorios p{
+.main-sect-accesorios p{
     color: white;
-    padding-top: 50px;
 }
 .accesorios-subtitle{
     font-family: 'Anton', sans-serif;
     font-family: 'Fjalla One', sans-serif;
     color: white;
-    text-align: center;
+    font-size: 30px;
+    margin-top: 25px;
 }
-.accesorios-sec-1 p{
-    color: white;
+
+.accesorios-1{
+    background-color: black;
+    height: 100px;
+    border: 1px solid white;
+    background-image: url(./multimedia/imagenes/banner-1-accesorios.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 0;
 }
+
+.accesorios-2{
+    background-color: black;
+    height: 200px;
+    border: 1px solid white;
+}
+
 .button-accesorios{
-    padding: 10px 20px;
     background-color: grey;
+    padding: 10px 20px;
     text-decoration: none;
     color: white;
     border: 1px solid white;
+    margin-bottom: 10px;
 }
-.tablas{
-    margin-bottom: 30px;
+.button-accesorios:hover{
+    color: black;
 }
-.quillas{
-    margin-bottom: 30px;
+.accesorios-general{
+    color: white;
 }
-.leash{
-    margin-bottom: 30px;
+@media only screen and (min-width:1000px){
+    .title-accesorios{
+        font-size: 100px;
+    }
+    .main-sect-accesorios p{
+        margin: 50px;      
+        font-size: 25px;
+        padding: 100px 150px;
+    }
 }
-.wetsuits{
-    margin-bottom: 30px;
-}
-
 
 
 
