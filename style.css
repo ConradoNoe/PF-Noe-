@@ -1,14 +1,16 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@200&family=PT+Serif:wght@400;700&display=swap");
 /*font-family: 'Noto Serif', serif;
-font-family: 'PT Serif', serif;*/
+    font-family: 'PT Serif', serif;*/
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Fjalla+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Fjalla+One&family=Russo+One&display=swap");
-/*variables inicio*/
-/*variables tamaño texto*/
-/*paleta de colores*/
-/*fuentes*/
-/*variables fin*/
+/* VAR INICIO*/
+/* TAMAÑO FUENTES*/
+/* COLORES */
+/* FUENTES*/
+/*VAR FINALIZA*/
+/*CONSTANTES*/
+/*para que sea fondo gris y letras negras borrar el (1)*/
 * {
   margin: 0;
   padding: 0;
@@ -16,10 +18,10 @@ font-family: 'PT Serif', serif;*/
 }
 
 body {
-  background-color: rgb(39, 38, 38);
+  background-color: rgb(41, 41, 41);
 }
 
-/*navbar*/
+/* NAVBAR INICIA*/
 header nav {
   font-size: 20PX;
 }
@@ -43,11 +45,11 @@ header nav .navbar-nav .nav-item .nav-link {
   color: white !important;
 }
 header nav .navbar-nav .nav-item .nav-link:hover {
-  color: rgb(251, 234, 0) !important;
+  color: rgb(70, 218, 220) !important;
 }
 
-/*navbar*/
-/*index con sass*/
+/* NAVBAR FINALIZA*/
+/* iINDEX INICIA */
 .main-index-general .jumbotron {
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./multimedia/imagenes/83417.jpg);
@@ -63,11 +65,11 @@ header nav .navbar-nav .nav-item .nav-link:hover {
   text-align: center;
   padding: 50px 10px;
   font-family: "Anton", sans-serif, "Fjalla One", sans-serif, "Russo One", sans-serif;
-  color: rgb(164, 197, 190);
+  color: rgb(143, 204, 191);
 }
 .main-index-general .jumbotron p {
   padding: 10px;
-  color: rgb(128, 125, 125);
+  color: rgb(255, 255, 255);
   text-align: center;
   font-size: 17px;
 }
@@ -82,7 +84,7 @@ header nav .navbar-nav .nav-item .nav-link:hover {
   margin-left: 70px;
 }
 .main-index-general .jumbotron .jumbotron-button:hover {
-  color: black;
+  color: rgb(70, 218, 220);
 }
 
 .main-section-index {
@@ -98,13 +100,14 @@ header nav .navbar-nav .nav-item .nav-link:hover {
 }
 .main-section-index .sec-main p {
   font-size: 17px;
-  color: rgb(128, 125, 125);
+  color: rgb(255, 255, 255);
 }
 .main-section-index .sec-main .objetivo {
   text-transform: capitalize;
   font-size: 35px;
   font-family: "Anton", sans-serif;
   font-family: "Fjalla One", sans-serif;
+  color: rgb(81, 194, 207);
 }
 .main-section-index .sec-main .button-index {
   background-color: rgb(75, 75, 75);
@@ -114,7 +117,7 @@ header nav .navbar-nav .nav-item .nav-link:hover {
   border: 1px solid white;
 }
 .main-section-index .sec-main .button-index:hover {
-  color: black;
+  color: rgb(70, 218, 220);
 }
 .main-section-index .sec-main .fa-solid {
   font-size: 50px;
@@ -129,7 +132,7 @@ header nav .navbar-nav .nav-item .nav-link:hover {
   text-align: center;
   font-size: 35px;
   text-transform: capitalize;
-  color: rgb(62, 80, 82);
+  color: rgb(81, 194, 207);
   margin: 25px;
   text-transform: capitalize;
   font-family: "Anton", sans-serif;
@@ -152,7 +155,7 @@ header nav .navbar-nav .nav-item .nav-link:hover {
   border: 2px solid black;
 }
 .sect-uno-index .info-john {
-  color: rgb(128, 125, 125);
+  color: rgb(255, 255, 255);
   margin: 10px;
   font-size: 17px;
 }
@@ -161,8 +164,7 @@ hr {
   color: white;
 }
 
-/*index termina*/
-/*mediaquerie del index inaliza*/
+/* MQ INDEX INICIA*/
 @media only screen and (min-width: 1000px) {
   .main-index-general .jumbotron h1 {
     font-size: 100px;
@@ -178,10 +180,9 @@ hr {
     margin-right: 400px;
   }
 }
-/*mediaquerie del index finaliza*/
-/*masomenos terminado index con sass capas falta retocar/*
-/*sobre nosotros con sass*/
-/* inicio main sobre nosotros con sass*/
+/* MQ INDEX FINALIZA*/
+/*INDEX FINALIZA*/
+/*SOBRE NOSOTROS INICIO*/
 .main-nos .main-sect-sobre-nos {
   height: 100vh;
   color: white;
@@ -191,7 +192,7 @@ hr {
 }
 .main-nos .main-sect-sobre-nos .title-nos {
   font-size: 50px;
-  color: rgb(164, 197, 190);
+  color: rgb(143, 204, 191);
   text-align: center;
   margin-top: 30px;
   margin-bottom: 20px;
@@ -201,7 +202,7 @@ hr {
 .main-nos .main-sect-sobre-nos .main-sobre-nos-p {
   padding-top: 200px;
   padding-bottom: 20px;
-  color: rgb(128, 125, 125);
+  color: rgb(255, 255, 255);
   font-size: 17px;
 }
 .main-nos .main-sect-sobre-nos .main-button-sobre-nos {
@@ -214,37 +215,33 @@ hr {
   margin: 30px;
 }
 .main-nos .main-sect-sobre-nos .main-button-sobre-nos:hover {
-  color: black;
+  color: rgb(70, 218, 220);
 }
 
-/* fin main sobre nosotros con sass*/
-/* inicio section general tiene article y aside sobre nosotros con sass*/
 .general-section .articles-sobre-nos .subtitle-nos-2 {
-  color: rgb(62, 80, 82);
+  color: rgb(81, 194, 207);
   font-family: "Anton", sans-serif;
   font-family: "Fjalla One", sans-serif;
   font-size: 35px;
 }
 .general-section .articles-sobre-nos .parrafito-s-n {
-  color: rgb(128, 125, 125);
+  color: rgb(255, 255, 255);
   font-size: 17px;
 }
 .general-section .aside-sobre-nos {
   border-left: 2px solid white;
 }
 .general-section .aside-sobre-nos .subtitle-nos-2 {
-  color: rgb(62, 80, 82);
+  color: rgb(81, 194, 207);
   font-family: "Anton", sans-serif;
   font-family: "Fjalla One", sans-serif;
   font-size: 35px;
 }
 .general-section .aside-sobre-nos .parrafito-s-n {
-  color: rgb(128, 125, 125);
+  color: rgb(255, 255, 255);
   font-size: 17px;
 }
 
-/* fin section general tiene article y aside sobre nosotros con sass*/
-/* inicio section redes sobre nosotros con sass*/
 .sec-nos-redes {
   margin-top: 30px;
   display: flex;
@@ -266,8 +263,7 @@ hr {
   font-family: "Fjalla One", sans-serif;
 }
 
-/* fin section redes sobre nosotros con sass*/
-/* inicio media queries sobre nos (FALTA TERMINAR) sobre nosotros con sass*/
+/* MQ INICIO */
 @media only screen and (min-width: 1000px) {
   .main-nos .main-sect-sobre-nos .title-nos {
     font-size: 100px;
@@ -282,18 +278,41 @@ hr {
     margin-right: 100px;
   }
 }
-/* fin media queries sobre nos (FALTA TERMINAR) sobre nosotros con sass*/
-/* terminado sobre-nos con sass capas falta retocar/*
-/*spots con sass*/
-.spots-tittle {
-  font-size: 50px;
-  color: white;
-  text-transform: capitalize;
+/* MQ FIN */
+/* SOBRE NOSOTROS FINALIZA /*
+
+/*SPOTS INICIA*/
+.main-container-spots {
+  height: 90vh;
+}
+.main-container-spots .row .art-spots-1 {
+  background-position: center;
+  background-size: cover;
+}
+.main-container-spots .row .art-spots-1 .art-tit-spots {
+  color: rgb(143, 204, 191);
+  font-size: 35px;
   text-align: center;
-  padding: 10px;
-  font-family: "Anton", sans-serif;
-  font-family: "Fjalla One", sans-serif;
-  font-family: "Russo One", sans-serif;
+  margin-top: 30px;
+  font-family: "Anton", sans-serif, "Fjalla One", sans-serif, "Russo One", sans-serif;
+}
+.main-container-spots .row .art-spots-1 .main-p-spots {
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  margin: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.main-container-spots .row .art-spots-1 .boton-spots-en-vivo {
+  background-color: grey;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  float: right;
+}
+.main-container-spots .row .art-spots-1 .boton-spots-en-vivo:hover {
+  color: rgb(70, 218, 220);
 }
 
 #spots {
@@ -312,14 +331,14 @@ hr {
   border: 3px solid black;
   margin: 40px;
 }
-#spots .card h5 {
+#spots .card .card-title {
   font-size: 35px;
-  color: white;
+  color: rgb(255, 255, 255);
   text-transform: capitalize;
   padding-top: 15px;
 }
 #spots .card p {
-  color: rgb(0, 0, 0);
+  color: white;
   margin: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -331,7 +350,7 @@ hr {
   color: white;
 }
 #spots .card a:hover {
-  color: black;
+  color: rgb(70, 218, 220);
 }
 #spots .card .card-img {
   height: 200px;
@@ -367,9 +386,41 @@ hr {
   background-image: url(./multimedia/imagenes/villa\ gesel.jpeg);
 }
 
-/*spots*/
-/*spots terminado con sass falta retocar*/
-/*contacto inicia*/
+.subtitle-spots {
+  height: 100px;
+  color: rgb(81, 194, 207);
+  font-size: 35px;
+  text-align: center;
+  font-family: "Anton", sans-serif, "Fjalla One", sans-serif, "Russo One", sans-serif;
+}
+
+/* MQ SPOTS INICIA*/
+@media only screen and (min-width: 1000px) {
+  .main-container-spots {
+    height: 100vh;
+  }
+  .main-container-spots .row .art-spots-1 .art-tit-spots {
+    font-size: 85px;
+  }
+  .main-container-spots .row .art-spots-1 .main-p-spots {
+    font-size: 19px;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  .main-container-spots .row .art-spots-1 .boton-spots-en-vivo {
+    float: left;
+    margin-left: 30px;
+  }
+  .main-container-spots .row .art-spots-1 .boton-spots-en-vivo:hover {
+    color: rgb(70, 218, 220);
+  }
+  .subtitle-spots {
+    font-size: 50PX;
+  }
+}
+/* MQ SPOTS FINALIZA*/
+/* SPOTS FINALIZA */
+/* CONTACTO INICIA */
 .form-pag {
   min-height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./multimedia/imagenes/contacto-bk-uno.jpg);
@@ -378,7 +429,7 @@ hr {
   display: flex;
 }
 .form-pag form {
-  background-color: rgba(253, 253, 253, 0.53);
+  background-color: rgba(255, 255, 255, 0.53);
   border: 1px solid black;
   margin: auto;
   width: 90%;
@@ -418,9 +469,12 @@ hr {
   border-bottom: 1px solid;
 }
 
-/*contacto con sass falta terminar pero ya esta ordenado*/
-/*accesorios falta terminar*/
-/*accesorios main inicio*/
+.body-form {
+  background-color: rgb(41, 41, 41);
+}
+
+/* CONTACTO FINALIZA */
+/* ACCESORIOS INICIA */
 .main-accesorios .main-sect-accesorios {
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./multimedia/imagenes/img-bk-accesorios.jpg);
@@ -430,7 +484,7 @@ hr {
 .main-accesorios .main-sect-accesorios .title-accesorios {
   font-size: 50px;
   text-align: center;
-  color: rgb(164, 197, 190);
+  color: rgb(143, 204, 191);
   font-family: "Anton", sans-serif;
   font-family: "Fjalla One", sans-serif;
   font-family: "Russo One", sans-serif;
@@ -440,7 +494,7 @@ hr {
 }
 .main-accesorios .main-sect-accesorios p {
   font-size: 17px;
-  color: rgb(128, 125, 125);
+  color: rgb(255, 255, 255);
   margin-top: 250px;
 }
 .main-accesorios .main-sect-accesorios .button-accesorios {
@@ -453,23 +507,23 @@ hr {
   margin-top: 50px;
 }
 .main-accesorios .main-sect-accesorios .button-accesorios:hover {
-  color: black;
+  color: rgb(70, 218, 220);
 }
 
-/*accesorios main fin*/
-/*accesorios section 2 inicio*/
 .accesorios-sec-2 .accesorios-general .accesorios-subtitle {
   font-family: "Anton", sans-serif;
   font-family: "Fjalla One", sans-serif;
-  color: rgb(62, 80, 82);
-  font-size: 30px;
-  margin-top: 25px;
+  color: rgb(81, 194, 207);
+  font-size: 35px;
+  margin-top: 40px;
   text-align: center;
   margin: 10px;
+  margin-bottom: 30px;
+  text-transform: capitalize;
 }
 .accesorios-sec-2 .accesorios-general p {
   font-size: 17px;
-  color: rgb(128, 125, 125);
+  color: rgb(255, 255, 255);
   margin-top: 20px;
 }
 .accesorios-sec-2 .accesorios-general .img-acc {
@@ -477,22 +531,22 @@ hr {
   height: 300px;
 }
 .accesorios-sec-2 .accesorios-general .img-accesorios-uno {
-  background-image: url(./multimedia/imagenes/tablas-accesorios.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url(./multimedia/imagenes/surf-boards-accesorios.jpeg);
   background-position: center;
   background-size: cover;
 }
 .accesorios-sec-2 .accesorios-general .img-accesorios-dos {
-  background-image: url(./multimedia/imagenes/tablas-accesorios.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url(./multimedia/imagenes/quillas-accesorios.jpeg);
   background-position: center;
   background-size: cover;
 }
 .accesorios-sec-2 .accesorios-general .img-accesorios-tres {
-  background-image: url(./multimedia/imagenes/tablas-accesorios.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url(./multimedia/imagenes/leash.jpeg);
   background-position: center;
   background-size: cover;
 }
 .accesorios-sec-2 .accesorios-general .img-accesorios-cuatro {
-  background-image: url(./multimedia/imagenes/tablas-accesorios.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url(./multimedia/imagenes/Wetsuit-accesorios.webp);
   background-position: center;
   background-size: cover;
 }
@@ -502,13 +556,15 @@ hr {
   text-decoration: none;
   color: white;
   border: 1px solid white;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  float: right;
 }
 .accesorios-sec-2 .accesorios-general .button-accesorios:hover {
-  color: black;
+  color: rgb(70, 218, 220);
 }
 
-/*accesorios section 2 fin*/
-/*accesorios media querys inicio*/
+/* MQ ACCESORIOS INICIA */
 @media only screen and (min-width: 1000px) {
   .main-accesorios .main-sect-accesorios .title-accesorios {
     font-size: 100px;
@@ -523,8 +579,8 @@ hr {
     margin-right: 400px;
   }
 }
-/*accesorios media querys fin*/
-/*footer*/
+/* MQ ACCEOSRIOS FINALIZA */
+/* FOOTER INICIA */
 .footer {
   background-color: rgba(32, 31, 31, 0.819);
   height: 100px;
@@ -535,6 +591,6 @@ hr {
   padding-top: 10px;
 }
 
-/*footer*/
+/* FOOTER FINALIZA */
 
 /*# sourceMappingURL=style.css.map */
