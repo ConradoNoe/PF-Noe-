@@ -9,7 +9,6 @@
 /* COLORES */
 /* FUENTES*/
 /*VAR FINALIZA*/
-/*CONSTANTES*/
 /*para que sea fondo gris y letras negras borrar el (1)*/
 * {
   margin: 0;
@@ -52,14 +51,14 @@ header nav .navbar-nav .nav-item .nav-link:hover {
 /* iINDEX INICIA */
 .main-index-general .jumbotron {
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./multimedia/imagenes/83417.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./multimedia/index-bk.jpg);
   width: 100%;
   background-size: cover;
   background-position: center;
   height: 100vh;
   color: white;
 }
-.main-index-general .jumbotron h1 {
+.main-index-general .jumbotron .tit-principal {
   font-size: 50px;
   text-transform: capitalize;
   text-align: center;
@@ -85,6 +84,8 @@ header nav .navbar-nav .nav-item .nav-link:hover {
 }
 .main-index-general .jumbotron .jumbotron-button:hover {
   color: rgb(70, 218, 220);
+  transform: scale(1.1);
+  transition: 0.7s;
 }
 
 .main-section-index {
@@ -98,9 +99,10 @@ header nav .navbar-nav .nav-item .nav-link:hover {
   height: 500px;
   padding-top: 20px;
 }
-.main-section-index .sec-main p {
+.main-section-index .sec-main .p-obj {
   font-size: 17px;
   color: rgb(255, 255, 255);
+  margin-bottom: 30px;
 }
 .main-section-index .sec-main .objetivo {
   text-transform: capitalize;
@@ -111,10 +113,12 @@ header nav .navbar-nav .nav-item .nav-link:hover {
 }
 .main-section-index .sec-main .button-index {
   background-color: rgb(75, 75, 75);
-  padding: 10px;
-  color: white;
   text-decoration: none;
+  color: white;
+  padding: 10px 20px;
   border: 1px solid white;
+  text-align: center;
+  text-transform: capitalize;
 }
 .main-section-index .sec-main .button-index:hover {
   color: rgb(70, 218, 220);
@@ -142,13 +146,13 @@ header nav .navbar-nav .nav-item .nav-link:hover {
 .sect-uno-index .contenedor-img-john {
   height: 300px;
   border: 2px solid black;
-  background-image: url(./multimedia/imagenes/john-john-florence-deja-hurley.jpg);
+  background-image: url(./multimedia/john-john-florence-deja-hurley.jpg);
   background-position: center;
   background-repeat: none;
   background-size: cover;
 }
 .sect-uno-index .contenedor-surf-john-byw {
-  background-image: url(./multimedia/imagenes/john\ surf\ black\ and\ \ white.jpeg);
+  background-image: url(./multimedia/john\ surf\ black\ and\ \ white.jpeg);
   height: 300px;
   background-size: cover;
   background-position: center;
@@ -166,7 +170,7 @@ hr {
 
 /* MQ INDEX INICIA*/
 @media only screen and (min-width: 1000px) {
-  .main-index-general .jumbotron h1 {
+  .main-index-general .jumbotron .tit-principal {
     font-size: 100px;
     padding-top: 60px;
   }
@@ -186,7 +190,7 @@ hr {
 .main-nos .main-sect-sobre-nos {
   height: 100vh;
   color: white;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./multimedia/imagenes/bk-sobre-nos-1.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./multimedia/bk-sobre-nos-1.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -216,6 +220,8 @@ hr {
 }
 .main-nos .main-sect-sobre-nos .main-button-sobre-nos:hover {
   color: rgb(70, 218, 220);
+  transform: scale(1.1);
+  transition: 0.7s;
 }
 
 .general-section .articles-sobre-nos .subtitle-nos-2 {
@@ -249,7 +255,7 @@ hr {
   color: rgb(255, 255, 255);
   font-size: 50px;
   justify-content: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./multimedia/imagenes/banner-nos-def.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./multimedia/banner-nos-def.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -280,10 +286,9 @@ hr {
 }
 /* MQ FIN */
 /* SOBRE NOSOTROS FINALIZA /*
-
 /*SPOTS INICIA*/
 .main-container-spots {
-  height: 90vh;
+  height: 100%;
 }
 .main-container-spots .row .art-spots-1 {
   background-position: center;
@@ -307,16 +312,17 @@ hr {
   background-color: grey;
   padding: 10px 20px;
   text-decoration: none;
-  color: white;
+  color: rgb(255, 255, 255);
   border: 1px solid white;
   float: right;
 }
 .main-container-spots .row .art-spots-1 .boton-spots-en-vivo:hover {
   color: rgb(70, 218, 220);
+  transform: scale(1.1);
+  transition: 0.7s;
 }
 
 #spots {
-  height: 100%;
   background-color: rgba(0, 255, 255, 0);
   display: flex;
   justify-content: space-evenly;
@@ -325,17 +331,22 @@ hr {
 }
 #spots .card {
   height: 400px;
-  width: 250px;
+  width: 270px;
   background-color: gray;
   text-align: center;
-  border: 3px solid black;
+  border: 3px solid rgb(16, 15, 15);
   margin: 40px;
+}
+#spots .card:hover {
+  transition: 1.2s;
+  transform: scale(1.2);
 }
 #spots .card .card-title {
   font-size: 35px;
   color: rgb(255, 255, 255);
   text-transform: capitalize;
   padding-top: 15px;
+  font-family: "Anton", sans-serif, "Fjalla One", sans-serif, "Russo One", sans-serif;
 }
 #spots .card p {
   color: white;
@@ -359,31 +370,31 @@ hr {
   background-size: cover;
 }
 #spots .card .img-uno {
-  background-image: url(./multimedia/imagenes/chapadmalal-640x439.jpeg);
+  background-image: url(./multimedia/chapadmalal-640x439.jpeg);
 }
 #spots .card .img-dos {
-  background-image: url(./multimedia/imagenes/mar\ del\ plata\ surf.webp);
+  background-image: url(./multimedia/mar\ del\ plata\ surf.webp);
 }
 #spots .card .img-tres {
-  background-image: url(./multimedia/imagenes/El-Muelle-de-Miramar.jpg);
+  background-image: url(./multimedia/El-Muelle-de-Miramar.jpg);
 }
 #spots .card .img-cuatro {
-  background-image: url(./multimedia/imagenes/mar\ de\ las\ pampas.jpeg);
+  background-image: url(./multimedia/mar\ de\ las\ pampas.jpeg);
 }
 #spots .card .img-cinco {
-  background-image: url(./multimedia/imagenes/mar\ chiquita.jpeg);
+  background-image: url(./multimedia/mar\ chiquita.jpeg);
 }
 #spots .card .img-seis {
-  background-image: url(./multimedia/imagenes/mar\ de\ ajo.jpeg);
+  background-image: url(./multimedia/mar\ de\ ajo.jpeg);
 }
 #spots .card .img-siete {
-  background-image: url(./multimedia/imagenes/San-Clemente-del-Tuyú.webp);
+  background-image: url(./multimedia/San-Clemente-del-Tuyú.webp);
 }
 #spots .card .img-ocho {
-  background-image: url(./multimedia/imagenes/quequen.jpeg);
+  background-image: url(./multimedia/quequen.jpeg);
 }
 #spots .card .img-nueve {
-  background-image: url(./multimedia/imagenes/villa\ gesel.jpeg);
+  background-image: url(./multimedia/villa\ gesel.jpeg);
 }
 
 .subtitle-spots {
@@ -397,7 +408,7 @@ hr {
 /* MQ SPOTS INICIA*/
 @media only screen and (min-width: 1000px) {
   .main-container-spots {
-    height: 100vh;
+    height: 900px;
   }
   .main-container-spots .row .art-spots-1 .art-tit-spots {
     font-size: 85px;
@@ -423,7 +434,7 @@ hr {
 /* CONTACTO INICIA */
 .form-pag {
   min-height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./multimedia/imagenes/contacto-bk-uno.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./multimedia/contacto-bk-uno.jpg);
   background-position: center;
   background-size: cover;
   display: flex;
@@ -477,7 +488,7 @@ hr {
 /* ACCESORIOS INICIA */
 .main-accesorios .main-sect-accesorios {
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./multimedia/imagenes/img-bk-accesorios.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./multimedia/img-bk-accesorios.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -531,22 +542,22 @@ hr {
   height: 300px;
 }
 .accesorios-sec-2 .accesorios-general .img-accesorios-uno {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url(./multimedia/imagenes/surf-boards-accesorios.jpeg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url(./multimedia/surf-boards-accesorios.jpeg);
   background-position: center;
   background-size: cover;
 }
 .accesorios-sec-2 .accesorios-general .img-accesorios-dos {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url(./multimedia/imagenes/quillas-accesorios.jpeg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url(./multimedia/quillas-accesorios.jpeg);
   background-position: center;
   background-size: cover;
 }
 .accesorios-sec-2 .accesorios-general .img-accesorios-tres {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url(./multimedia/imagenes/leash.jpeg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url(./multimedia/leash.jpeg);
   background-position: center;
   background-size: cover;
 }
 .accesorios-sec-2 .accesorios-general .img-accesorios-cuatro {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url(./multimedia/imagenes/Wetsuit-accesorios.webp);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url(./multimedia/Wetsuit-accesorios.webp);
   background-position: center;
   background-size: cover;
 }

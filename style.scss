@@ -30,63 +30,39 @@ sans-serif,
 'Russo One',
 sans-serif;
 /*VAR FINALIZA*/
-/*CONSTANTES*/
-$light: pagina-blanca (1);
 /*para que sea fondo gris y letras negras borrar el (1)*/
-
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
 }
-
 body {
     background-color: $bk-general;
-
-    @if $light==pagina-blanca {
-        background-color: rgb(189, 188, 188);
-
-    }
 }
-
 /* NAVBAR INICIA*/
 header {
     nav {
         font-size: 20PX;
-
         .navbar {
             background-color: rgb(0, 0, 0) !important;
         }
-
         .navbar-brand {
             color: white !important;
             font-size: 25PX;
             font-family: 'Anton', sans-serif;
             font-family: 'Fjalla One', sans-serif;
             font-family: 'Russo One', sans-serif;
-
-            @if $light==pagina-blanca {
-                color: black !important;
-            }
         }
-
         .navbar-nav {
             width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
-
             .nav-item {
                 .nav-link {
                     color: white !important;
-
-                    @if $light==pagina-blanca {
-                        color: black !important;
-                    }
                 }
-
                 .nav-link:hover {
                     color: $hover-color !important;
                 }
@@ -94,43 +70,31 @@ header {
         }
     }
 }
-
 /* NAVBAR FINALIZA*/
-
 /* iINDEX INICIA */
 .main-index-general {
-
     .jumbotron {
         height: 100vh;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./multimedia/imagenes/83417.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./multimedia/index-bk.jpg);
         width: 100%;
         background-size: cover;
         background-position: center;
         height: 100vh;
         color: white;
-
-        h1 {
+        .tit-principal {
             font-size: $t1-size;
             text-transform: capitalize;
             text-align: center;
             padding: 50px 10px;
             font-family: $font1;
-
             color: $color-titles;
-
-            @if $light==pagina-blanca {
-                color: white;
-            }
-
         }
-
         p {
             padding: 10px;
             color: $letra;
             text-align: center;
             font-size: $p-xs;
         }
-
         .jumbotron-button {
             background-color: rgb(75, 75, 75);
             text-decoration: none;
@@ -140,59 +104,50 @@ header {
             text-align: center;
             text-transform: capitalize;
             margin-left: 70px;
-
+            
             &:hover {
                 color: $hover-color;
+                transform: scale(1.1);
+                transition: 0.7s;
             }
         }
-
     }
 }
-
 .main-section-index {
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
     .sec-main {
         height: 500px;
         padding-top: 20px;
-
-        p {
+        .p-obj {
             font-size: $p-xs;
             color: $letra;
-
-            @if $light==pagina-blanca {
-                color: black;
-            }
+            margin-bottom: 30px;
         }
-
         .objetivo {
             text-transform: capitalize;
             font-size: $t2-size;
             font-family: 'Anton', sans-serif;
             font-family: 'Fjalla One', sans-serif;
             color: $subtitle-color;
-
-            @if $light==pagina-blanca {
-                color: black;
-            }
         }
-
-        .button-index {
+        .button-index{
             background-color: rgb(75, 75, 75);
-            padding: 10px;
-            color: white;
             text-decoration: none;
+            color: white;
+            padding: 10px 20px;
             border: 1px solid white;
-
+            text-align: center;
+            text-transform: capitalize;
+            
             &:hover {
                 color: $hover-color;
+                
             }
         }
-
         .fa-solid {
             font-size: 50px;
             border: 2px solid white;
@@ -200,10 +155,6 @@ header {
             margin: 20px;
             text-align: center;
             color: white;
-
-            @if $light==pagina-blanca {
-                color: black;
-            }
         }
     }
 }
@@ -217,79 +168,58 @@ header {
     text-transform: capitalize;
     font-family: 'Anton', sans-serif;
     font-family: 'Fjalla One', sans-serif;
-
-    @if $light==pagina-blanca {
-        color: black;
-    }
 }
-
 .sect-uno-index {
     .contenedor-img-john {
         height: 300px;
         border: 2px solid black;
-        background-image: url(./multimedia/imagenes/john-john-florence-deja-hurley.jpg);
+        background-image: url(./multimedia/john-john-florence-deja-hurley.jpg);
         background-position: center;
         background-repeat: none;
         background-size: cover;
     }
-
     .contenedor-surf-john-byw {
-        background-image: url(./multimedia/imagenes/john\ surf\ black\ and\ \ white.jpeg);
+        background-image: url(./multimedia/john\ surf\ black\ and\ \ white.jpeg);
         height: 300px;
         background-size: cover;
         background-position: center;
         border: 2px solid black;
     }
-
     .info-john {
         color: $letra;
         margin: 10px;
         font-size: $p-xs;
-
-        @if $light==pagina-blanca {
-            color: black;
-        }
     }
 }
-
 hr {
     color: white;
 }
-
 /* MQ INDEX INICIA*/
 @media only screen and (min-width: 1000px) {
-
-    .main-index-general .jumbotron h1 {
+    .main-index-general .jumbotron .tit-principal {
         font-size: 100px;
         padding-top: 60px;
     }
-
     .main-index-general .jumbotron p {
         margin: 50px;
-
         font-size: 25px;
         padding: 100px 150px;
-
     }
-
     .main-index-general .jumbotron .jumbotron-button {
         float: right;
         margin-right: 400px;
     }
 }
-
 /* MQ INDEX FINALIZA*/
 /*INDEX FINALIZA*/
-
 /*SOBRE NOSOTROS INICIO*/
 .main-nos {
     .main-sect-sobre-nos {
         height: 100vh;
         color: white;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./multimedia/imagenes/bk-sobre-nos-1.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./multimedia/bk-sobre-nos-1.jpg);
         background-size: cover;
         background-position: center;
-
         .title-nos {
             font-size: $t1-size;
             color: $color-titles;
@@ -298,20 +228,13 @@ hr {
             margin-bottom: 20px;
             text-transform: capitalize;
             font-family: $font1;
-
-            @if $light==pagina-blanca {
-                color: rgb(255, 255, 255);
-            }
         }
-
         .main-sobre-nos-p {
             padding-top: 200px;
             padding-bottom: 20px;
             color: $letra;
             font-size: $p-xs;
-
         }
-
         .main-button-sobre-nos {
             padding: 10px 20px;
             background-color: rgb(75, 75, 75);
@@ -320,9 +243,11 @@ hr {
             text-transform: capitalize;
             border: 1px solid white;
             margin: 30px;
-
             &:hover {
                 color: $hover-color;
+                transform: scale(1.1);
+                transition: 0.7s;
+                
             }
         }
     }
@@ -335,47 +260,26 @@ hr {
             font-family: 'Anton', sans-serif;
             font-family: 'Fjalla One', sans-serif;
             font-size: $t2-size;
-
-            @if $light==pagina-blanca {
-                color: black;
-            }
         }
-
         .parrafito-s-n {
             color: $letra;
             font-size: $p-xs;
-
-            @if $light==pagina-blanca {
-                color: black;
-            }
         }
     }
-
     .aside-sobre-nos {
         border-left: 2px solid white;
-
         .subtitle-nos-2 {
             color: $subtitle-color;
             font-family: 'Anton', sans-serif;
             font-family: 'Fjalla One', sans-serif;
             font-size: $t2-size;
-
-            @if $light==pagina-blanca {
-                color: rgb(0, 0, 0);
-            }
-        }
-
+        } 
         .parrafito-s-n {
             color: $letra;
             font-size: $p-xs;
-
-            @if $light==pagina-blanca {
-                color: black;
-            }
         }
     }
 }
-
 .sec-nos-redes {
     margin-top: 30px;
     display: flex;
@@ -383,10 +287,9 @@ hr {
     color: rgb(255, 255, 255);
     font-size: 50px;
     justify-content: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./multimedia/imagenes/banner-nos-def.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./multimedia/banner-nos-def.jpg);
     background-position: center;
     background-size: cover;
-
     .subtitle-redes {
         text-align: center;
         color: rgb(255, 255, 255);
@@ -397,19 +300,16 @@ hr {
         font-family: 'Fjalla One', sans-serif;
     }
 }
-
 /* MQ INICIO */
 @media only screen and (min-width:1000px) {
     .main-nos .main-sect-sobre-nos .title-nos {
         font-size: 100px;
     }
-
     .main-nos .main-sect-sobre-nos .main-sobre-nos-p {
         font-size: 25px;
         margin: 80px;
         padding-top: 170px;
     }
-
     .main-nos .main-sect-sobre-nos .main-button-sobre-nos {
         float: right;
         margin-right: 100px;
@@ -418,208 +318,158 @@ hr {
 
 /* MQ FIN */
 /* SOBRE NOSOTROS FINALIZA /*
-
 /*SPOTS INICIA*/
-
 .main-container-spots {
-    height: 90vh;
-
+    height: 100%;
     .row {
         .art-spots-1 {
             background-position: center;
             background-size: cover;
-
             .art-tit-spots {
                 color: $color-titles;
                 font-size: $t2-size;
                 text-align: center;
                 margin-top: 30px;
                 font-family: $font1;
-
-                @if $light==pagina-blanca {
-                    color: black;
-                }
             }
-
             .main-p-spots {
                 color: $letra;
                 font-size: $p-xs;
                 margin: 10px;
                 margin-top: 30px;
                 margin-bottom: 30px;
-
-                @if $light==pagina-blanca {
-                    color: black;
-                }
             }
-
             .boton-spots-en-vivo {
                 background-color: grey;
                 padding: 10px 20px;
                 text-decoration: none;
-                color: white;
+                color: rgb(255, 255, 255);
                 border: 1px solid white;
                 float: right;
-
                 &:hover {
                     color: $hover-color;
+                    transform: scale(1.1);
+                    transition: 0.7s;
                 }
             }
         }
     }
 }
-
 #spots {
-    height: 100%;
+    
     background-color: rgba(0, 255, 255, 0);
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: center;
-
     .card {
         height: 400px;
-        width: 250px;
+        width: 270px;
         background-color: gray;
         text-align: center;
-        border: 3px solid black;
-        margin: 40px;
-
+        border: 3px solid rgb(16, 15, 15);
+        margin: 40px;    
+            &:hover{
+                transition: 1.2s;
+                transform: scale(1.2);
+            }
         .card-title {
             font-size: $t2-size;
             color: $card-itle-color;
             text-transform: capitalize;
             padding-top: 15px;
-
-            @if $light==pagina-blanca {
-                color: black;
-            }
+            font-family: $font1;
         }
-
         p {
             color: $card-p-color;
             margin: 10px;
             padding-top: 10px;
             padding-bottom: 10px;
-
-            @if $light==pagina-blanca {
-                color: black;
-            }
         }
-
         a {
             background-color: rgb(75, 75, 75);
             text-decoration: none;
             padding: 10px 20px;
             color: white;
-
-            @if $light==pagina-blanca {
-                color: black;
-            }
-
             &:hover {
                 color: $hover-color;
             }
         }
-
         .card-img {
             height: 200px;
             width: 100%;
             background-position: center;
             background-size: cover;
         }
-
         .img-uno {
-            background-image: url(./multimedia/imagenes/chapadmalal-640x439.jpeg);
+            background-image: url(./multimedia/chapadmalal-640x439.jpeg);
         }
-
         .img-dos {
-            background-image: url(./multimedia/imagenes/mar\ del\ plata\ surf.webp);
+            background-image: url(./multimedia/mar\ del\ plata\ surf.webp);
         }
-
         .img-tres {
-            background-image: url(./multimedia/imagenes/El-Muelle-de-Miramar.jpg);
+            background-image: url(./multimedia/El-Muelle-de-Miramar.jpg);
         }
-
         .img-cuatro {
-            background-image: url(./multimedia/imagenes/mar\ de\ las\ pampas.jpeg);
+            background-image: url(./multimedia/mar\ de\ las\ pampas.jpeg);
         }
-
         .img-cinco {
-            background-image: url(./multimedia/imagenes/mar\ chiquita.jpeg);
+            background-image: url(./multimedia/mar\ chiquita.jpeg);
         }
-
         .img-seis {
-            background-image: url(./multimedia/imagenes/mar\ de\ ajo.jpeg);
+            background-image: url(./multimedia/mar\ de\ ajo.jpeg);
         }
-
         .img-siete {
-            background-image: url(./multimedia/imagenes/San-Clemente-del-Tuyú.webp);
+            background-image: url(./multimedia/San-Clemente-del-Tuyú.webp);
         }
-
         .img-ocho {
-            background-image: url(./multimedia/imagenes/quequen.jpeg);
+            background-image: url(./multimedia/quequen.jpeg);
         }
-
         .img-nueve {
-            background-image: url(./multimedia/imagenes/villa\ gesel.jpeg);
+            background-image: url(./multimedia/villa\ gesel.jpeg);
         }
     }
 }
-
 .subtitle-spots {
     height: 100px;
     color: $subtitle-color;
     font-size: $t2-size;
     text-align: center;
     font-family: $font1;
-
-    @if $light==pagina-blanca {
-        color: black;
-    }
 }
-
 /* MQ SPOTS INICIA*/
 @media only screen and (min-width:1000px) {
     .main-container-spots {
-        height: 100vh;
+        height: 900px;
     }
-
     .main-container-spots .row .art-spots-1 .art-tit-spots {
         font-size: 85px;
     }
-
     .main-container-spots .row .art-spots-1 .main-p-spots {
         font-size: 19px;
         padding: 10px;
         margin-top: 20px;
     }
-
     .main-container-spots .row .art-spots-1 .boton-spots-en-vivo {
         float: left;
         margin-left: 30px;
-
         &:hover {
             color: $hover-color;
         }
     }
-
     .subtitle-spots {
         font-size: 50PX;
     }
 }
-
 /* MQ SPOTS FINALIZA*/
 /* SPOTS FINALIZA */
-
 /* CONTACTO INICIA */
 .form-pag {
     min-height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./multimedia/imagenes/contacto-bk-uno.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./multimedia/contacto-bk-uno.jpg);
     background-position: center;
     background-size: cover;
     display: flex;
-
     form {
         background-color: rgba(255, 255, 255, 0.53);
         border: 1px solid black;
@@ -630,29 +480,23 @@ hr {
         border-radius: 10px;
         box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
         text-align: center;
-
         .form-title {
             font-size: 2rem;
             margin-bottom: .5em;
         }
-
         .form-p {
             font-weight: 300;
         }
-
         .form-link {
             font-weight: 400;
             color: black;
         }
-
         .form-container {
             margin-top: 3em;
             display: grid;
             gap: 2.5em;
-
             .form-group {
                 position: relative;
-
                 .form-input {
                     width: 100%;
                     background: none;
@@ -667,26 +511,17 @@ hr {
         }
     }
 }
-
 .body-form {
     background-color: $bk-general;
-
-    @if $light==pagina-blanca {
-        background-color: grey;
-
-    }
 }
-
 /* CONTACTO FINALIZA */
-
 /* ACCESORIOS INICIA */
 .main-accesorios {
     .main-sect-accesorios {
         height: 100vh;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./multimedia/imagenes/img-bk-accesorios.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./multimedia/img-bk-accesorios.jpg);
         background-size: cover;
         background-position: center;
-
         .title-accesorios {
             font-size: $t1-size;
             text-align: center;
@@ -697,22 +532,12 @@ hr {
             padding-top: 20px;
             text-transform: capitalize;
             text-align: center;
-
-            @if $light==pagina-blanca {
-                color: rgb(255, 255, 255);
-            }
         }
-
         p {
             font-size: $p-xs;
             color: $letra;
             margin-top: 250px;
-
-            @if $light==pagina-blanca {
-                color: rgb(255, 255, 255);
-            }
         }
-
         .button-accesorios {
             background-color: grey;
             padding: 10px 20px;
@@ -721,14 +546,12 @@ hr {
             border: 1px solid white;
             margin-bottom: 10px;
             margin-top: 50px;
-
             &:hover {
                 color: $hover-color;
             }
         }
     }
 }
-
 .accesorios-sec-2 {
     .accesorios-general {
         .accesorios-subtitle {
@@ -741,51 +564,36 @@ hr {
             margin: 10px;
             margin-bottom: 30px;
             text-transform: capitalize;
-
-            @if $light==pagina-blanca {
-                color: black;
-            }
         }
-
         p {
             font-size: $p-xs;
             color: $letra;
             margin-top: 20px;
-
-            @if $light==pagina-blanca {
-                color: black;
-            }
         }
-
         .img-acc {
             width: 100%;
             height: 300px;
         }
-
         .img-accesorios-uno {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url(./multimedia/imagenes/surf-boards-accesorios.jpeg);
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url(./multimedia/surf-boards-accesorios.jpeg);
             background-position: center;
             background-size: cover;
         }
-
         .img-accesorios-dos {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url(./multimedia/imagenes/quillas-accesorios.jpeg);
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url(./multimedia/quillas-accesorios.jpeg);
             background-position: center;
             background-size: cover;
         }
-
         .img-accesorios-tres {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url(./multimedia/imagenes/leash.jpeg);
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url(./multimedia/leash.jpeg);
             background-position: center;
             background-size: cover;
         }
-
         .img-accesorios-cuatro {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url(./multimedia/imagenes/Wetsuit-accesorios.webp);
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url(./multimedia/Wetsuit-accesorios.webp);
             background-position: center;
             background-size: cover;
         }
-
         .button-accesorios {
             background-color: grey;
             padding: 10px 20px;
@@ -795,46 +603,36 @@ hr {
             margin-bottom: 20px;
             margin-top: 10px;
             float: right;
-
             &:hover {
                 color: $hover-color;
             }
-
         }
     }
 }
-
 /* MQ ACCESORIOS INICIA */
 @media only screen and (min-width:1000px) {
     .main-accesorios .main-sect-accesorios .title-accesorios {
         font-size: 100px;
     }
-
     .main-accesorios .main-sect-accesorios p {
         margin: 50px;
         font-size: 25px;
         padding: 100px 150px;
     }
-
     .main-accesorios .main-sect-accesorios .button-accesorios {
         float: right;
         margin-right: 400px;
     }
-
 }
-
 /* MQ ACCEOSRIOS FINALIZA */
-
 /* FOOTER INICIA */
 .footer {
     background-color: rgba(32, 31, 31, 0.819);
     height: 100px;
     text-align: center;
     color: rgb(252, 252, 252);
-
     p {
         padding-top: 10px;
     }
 }
-
 /* FOOTER FINALIZA */
