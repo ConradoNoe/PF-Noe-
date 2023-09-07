@@ -17,7 +17,7 @@ $letra: rgb(255, 255, 255);
 $color-titles: rgb(143, 204, 191);
 $button-bk: rgb(128, 128, 128);
 $border-button: white;
-$subtitle-color: rgb(81, 194, 207);
+$subtitle-color: rgb(115, 170, 176);
 $card-p-color: white;
 $card-itle-color:rgb(255, 255, 255);
 $bk-general: rgb(41, 41, 41);
@@ -382,9 +382,9 @@ hr {
         }
         p {
             color: $card-p-color;
-            margin: 10px;
+            margin: 5px;
             padding-top: 10px;
-            padding-bottom: 10px;
+            
         }
         a {
             background-color: rgb(75, 75, 75);
@@ -420,7 +420,7 @@ hr {
             background-image: url(./multimedia/mar\ de\ ajo.jpeg);
         }
         .img-siete {
-            background-image: url(./multimedia/San-Clemente-del-Tuyú.webp);
+            background-image: url(./multimedia/tuyu.webp);
         }
         .img-ocho {
             background-image: url(./multimedia/quequen.jpeg);
@@ -440,10 +440,10 @@ hr {
 /* MQ SPOTS INICIA*/
 @media only screen and (min-width:1000px) {
     .main-container-spots {
-        height: 900px;
+        height: 700px;
     }
     .main-container-spots .row .art-spots-1 .art-tit-spots {
-        font-size: 85px;
+        font-size: 75px;
     }
     .main-container-spots .row .art-spots-1 .main-p-spots {
         font-size: 19px;

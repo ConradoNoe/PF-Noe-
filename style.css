@@ -108,7 +108,7 @@ header nav .navbar-nav .nav-item .nav-link:hover {
   font-size: 35px;
   font-family: "Anton", sans-serif;
   font-family: "Fjalla One", sans-serif;
-  color: rgb(81, 194, 207);
+  color: rgb(115, 170, 176);
 }
 .main-section-index .sec-main .button-index {
   background-color: rgb(75, 75, 75);
@@ -135,7 +135,7 @@ header nav .navbar-nav .nav-item .nav-link:hover {
   text-align: center;
   font-size: 35px;
   text-transform: capitalize;
-  color: rgb(81, 194, 207);
+  color: rgb(115, 170, 176);
   margin: 25px;
   text-transform: capitalize;
   font-family: "Anton", sans-serif;
@@ -224,7 +224,7 @@ hr {
 }
 
 .general-section .articles-sobre-nos .subtitle-nos-2 {
-  color: rgb(81, 194, 207);
+  color: rgb(115, 170, 176);
   font-family: "Anton", sans-serif;
   font-family: "Fjalla One", sans-serif;
   font-size: 35px;
@@ -237,7 +237,7 @@ hr {
   border-left: 2px solid white;
 }
 .general-section .aside-sobre-nos .subtitle-nos-2 {
-  color: rgb(81, 194, 207);
+  color: rgb(115, 170, 176);
   font-family: "Anton", sans-serif;
   font-family: "Fjalla One", sans-serif;
   font-size: 35px;
@@ -349,9 +349,8 @@ hr {
 }
 #spots .card p {
   color: white;
-  margin: 10px;
+  margin: 5px;
   padding-top: 10px;
-  padding-bottom: 10px;
 }
 #spots .card a {
   background-color: rgb(75, 75, 75);
@@ -387,7 +386,7 @@ hr {
   background-image: url(./multimedia/mar\ de\ ajo.jpeg);
 }
 #spots .card .img-siete {
-  background-image: url(./multimedia/San-Clemente-del-Tuyú.webp);
+  background-image: url(./multimedia/tuyu.webp);
 }
 #spots .card .img-ocho {
   background-image: url(./multimedia/quequen.jpeg);
@@ -398,7 +397,7 @@ hr {
 
 .subtitle-spots {
   height: 100px;
-  color: rgb(81, 194, 207);
+  color: rgb(115, 170, 176);
   font-size: 35px;
   text-align: center;
   font-family: "Anton", sans-serif, "Fjalla One", sans-serif, "Russo One", sans-serif;
@@ -407,10 +406,10 @@ hr {
 /* MQ SPOTS INICIA*/
 @media only screen and (min-width: 1000px) {
   .main-container-spots {
-    height: 900px;
+    height: 700px;
   }
   .main-container-spots .row .art-spots-1 .art-tit-spots {
-    font-size: 85px;
+    font-size: 75px;
   }
   .main-container-spots .row .art-spots-1 .main-p-spots {
     font-size: 19px;
@@ -524,7 +523,7 @@ hr {
 .accesorios-sec-2 .accesorios-general .accesorios-subtitle {
   font-family: "Anton", sans-serif;
   font-family: "Fjalla One", sans-serif;
-  color: rgb(81, 194, 207);
+  color: rgb(115, 170, 176);
   font-size: 35px;
   margin-top: 40px;
   text-align: center;
