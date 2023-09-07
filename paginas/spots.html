@@ -11,6 +11,10 @@
     <!-- bs 5.2 inicia!-->
     <link rel="stylesheet" href="../style.css">
     <title>spots</title>
+    <meta name="tittle" content="los mejores spots en toda la argentina">
+    <meta name="description" content="nuestra objetivo es llevarte a explorar los mejores spots de surf en toda Argentina. Creemos que cada ola tiene su propia magia y belleza, y estamos decididos a compartir estos tesoros ocultos contigo.">
+    <!--inicia animaciones-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <!-- nav bar inicio-->
@@ -46,7 +50,7 @@
     </header>   
     <!-- nav bar fin-->
     <main>
-        <div class="main-container-spots container-fluid mt-4">
+        <div class="main-container-spots container-fluid mt-4"data-aos="zoom-in">
             <div class="row">
                 <div class="col-xl-8 order-xl-2">
                     <video autoplay controls loop src="../multimedia/surfer_-_13772 (1080p).mp4" width="100%"></video>
@@ -63,64 +67,55 @@
     </main>
     <hr>
     <h2 class="subtitle-spots">informacion sobre spots en argentina:</h2>
-    <section id="spots">
-            
+    <section id="spots"data-aos="zoom-out">
             <article class="card">
                 <div class="card-img img-uno"></div>
                 <h3 class="card-title"> chapadmalal</h3>
                 <p class="card-desc"> Chapadmalal, un paraíso surfero en Argentina con olas perfectas para disfrutar de la pasión del surf.</p>
                 <a target="_blank" href="https://es.wikipedia.org/wiki/Chapadmalal">ver mas!</a>
             </article>
-            
             <article class="card">
                 <div class="card-img img-dos"></div>
                 <h3 class="card-title"> mar del plata</h3>
                 <p class="card-desc"> Famosa ciudad costera con olas constantes para surfistas de todos los niveles.</p>
                 <a target="_blank" href="https://es.wikipedia.org/wiki/Mar_del_Plata">ver mas!</a>
             </article>
-
             <article class="card">
                 <div class="card-img img-tres"></div>
                 <h3 class="card-title"> miramar</h3>
                 <p class="card-desc">  Paraíso surfista con impresionantes playas y olas fuertes para una experiencia emocionante.</p>
                 <a target="_blank" href="https://es.wikipedia.org/wiki/Miramar_(Buenos_Aires)">ver mas!</a>
             </article>
-
             <article class="card">
                 <div class="card-img img-cuatro"></div>
                 <h3 class="card-title"> mar de las pampas</h3>
                 <p class="card-desc"> Playas tranquilas y excelentes rompientes lo hacen ideal para surfistas experimentados.</p>
                 <a target="_blank" href="https://es.wikipedia.org/wiki/Mar_de_las_Pampas">ver mas!</a>
             </article>
-
             <article class="card">
                 <div class="card-img img-cinco"></div>
                 <h3 class="card-title"> mar chiquita</h3>
                 <p class="card-desc"> El "Mar de Ansenuza" ofrece experiencias únicas de surf en tierra adentro, rodeado de paisajes pintorescos.</p>
                 <a target="_blank" href="https://es.wikipedia.org/wiki/Laguna_Mar_Chiquita_(C%C3%B3rdoba)">ver mas!</a>
             </article>
-
             <article class="card">
                 <div class="card-img img-seis"></div>
                 <h3 class="card-title"> necochea</h3>
                 <p class="card-desc"> Olas amigables para principiantes, ambiente relajado y puestas de sol impresionantes atraen a los entusiastas del surf.</p>
                 <a target="_blank" href="https://es.wikipedia.org/wiki/Necochea">ver mas!</a>
             </article>
-
             <article class="card">
                 <div class="card-img img-siete"></div>
                 <h3 class="card-title"> san clemente del tuyu</h3>
                 <p class="card-desc"> Un destino de surf popular con varias rompientes adecuadas para surfistas de diferentes niveles de habilidad.</p>
                 <a target="_blank" href="https://es.wikipedia.org/wiki/San_Clemente_del_Tuy%C3%BA">ver mas!</a>
             </article>
-
             <article class="card">
                 <div class="card-img img-ocho"></div>
                 <h3 class="card-title"> quequen</h3>
                 <p class="card-desc"> Conocido por sus olas poderosas y marejadas fuertes, atrae a surfistas avanzados que buscan un desafío.</p>
                 <a target="_blank" href="https://es.wikipedia.org/wiki/Quequ%C3%A9n">ver mas!</a>
             </article>
-
             <article class="card">
                 <div class="card-img img-nueve"></div>
                 <h3 class="card-title"> villa gessel</h3>
@@ -128,7 +123,6 @@
                 <a target="_blank" href="https://es.wikipedia.org/wiki/Villa_Gesell">ver mas!</a>
             </article>
         </section>
-    
         <!--inicia footer-->
         <footer class="conteiner-fluid">
             <div class="row">
@@ -148,6 +142,9 @@
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
     <!-- finaliza bs js-->
-    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

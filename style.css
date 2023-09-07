@@ -50,7 +50,7 @@ header nav .navbar-nav .nav-item .nav-link:hover {
 /* NAVBAR FINALIZA*/
 /* iINDEX INICIA */
 .main-index-general .jumbotron {
-  height: 100vh;
+  height: 800px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./multimedia/index-bk.jpg);
   width: 100%;
   background-size: cover;
@@ -97,7 +97,6 @@ header nav .navbar-nav .nav-item .nav-link:hover {
 }
 .main-section-index .sec-main {
   height: 500px;
-  padding-top: 20px;
 }
 .main-section-index .sec-main .p-obj {
   font-size: 17px;
@@ -188,7 +187,7 @@ hr {
 /*INDEX FINALIZA*/
 /*SOBRE NOSOTROS INICIO*/
 .main-nos .main-sect-sobre-nos {
-  height: 100vh;
+  height: 900px;
   color: white;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./multimedia/bk-sobre-nos-1.jpg);
   background-size: cover;
@@ -204,7 +203,7 @@ hr {
   font-family: "Anton", sans-serif, "Fjalla One", sans-serif, "Russo One", sans-serif;
 }
 .main-nos .main-sect-sobre-nos .main-sobre-nos-p {
-  padding-top: 200px;
+  padding-top: 150px;
   padding-bottom: 20px;
   color: rgb(255, 255, 255);
   font-size: 17px;
@@ -487,7 +486,7 @@ hr {
 /* CONTACTO FINALIZA */
 /* ACCESORIOS INICIA */
 .main-accesorios .main-sect-accesorios {
-  height: 100vh;
+  height: 800px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./multimedia/img-bk-accesorios.jpg);
   background-size: cover;
   background-position: center;
@@ -507,6 +506,7 @@ hr {
   font-size: 17px;
   color: rgb(255, 255, 255);
   margin-top: 250px;
+  margin-bottom: 40px;
 }
 .main-accesorios .main-sect-accesorios .button-accesorios {
   background-color: grey;
@@ -515,7 +515,7 @@ hr {
   color: white;
   border: 1px solid white;
   margin-bottom: 10px;
-  margin-top: 50px;
+  margin-top: 90px;
 }
 .main-accesorios .main-sect-accesorios .button-accesorios:hover {
   color: rgb(70, 218, 220);
@@ -536,6 +536,7 @@ hr {
   font-size: 17px;
   color: rgb(255, 255, 255);
   margin-top: 20px;
+  width: 300px;
 }
 .accesorios-sec-2 .accesorios-general .img-acc {
   width: 100%;
@@ -569,10 +570,11 @@ hr {
   border: 1px solid white;
   margin-bottom: 20px;
   margin-top: 10px;
-  float: right;
 }
 .accesorios-sec-2 .accesorios-general .button-accesorios:hover {
   color: rgb(70, 218, 220);
+  transform: scale(1.1);
+  transition: 0.7s;
 }
 
 /* MQ ACCESORIOS INICIA */
@@ -597,6 +599,7 @@ hr {
   height: 100px;
   text-align: center;
   color: rgb(252, 252, 252);
+  margin-top: 30px;
 }
 .footer p {
   padding-top: 10px;
