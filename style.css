@@ -65,6 +65,9 @@ header nav .navbar-nav .nav-item .nav-link:hover {
 .footer p {
   padding-top: 10px;
 }
+.footer .redes a i {
+  color: white;
+}
 
 /*index*/
 .main-index-general {
@@ -271,21 +274,6 @@ hr {
   font-family: "Fjalla One", sans-serif;
 }
 
-/* MQ INICIO */
-@media only screen and (min-width: 1000px) {
-  .main-nos .main-sect-sobre-nos .title-nos {
-    font-size: 100px;
-  }
-  .main-nos .main-sect-sobre-nos .main-sobre-nos-p {
-    font-size: 25px;
-    margin: 30px;
-    padding-top: 100px;
-  }
-  .main-nos .main-sect-sobre-nos .main-button-sobre-nos {
-    float: right;
-    margin-right: 100px;
-  }
-}
 /*spots*/
 .main-container-spots {
   height: 100%;
